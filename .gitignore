@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+skill/daily-linkedin-post/assets/
+state/
+*.mp4
+.DS_Store
