@@ -1,0 +1,6 @@
+{"kicker":"backend / checklist","accent":"cyan","slides":[
+{"type":"cover","title":"5 checks before you ship a new endpoint","subtitle":"A generic example carousel.","icon":"rocket"},
+{"type":"point","n":1,"title":"Validate the input","lines":["Reject bad data at the edge.","Never trust the client."],"code":["validate($request, $rules);"],"icon":"shield-check","color":"emerald"},
+{"type":"point","n":2,"title":"Set a timeout","lines":["Every outbound call needs a deadline."],"code":["Http::timeout(5)->get($url);"],"icon":"timer","color":"amber"},
+{"type":"compare","title":"Retry blindly vs retry on purpose","left":{"h":"Blind","items":["Retries everything","Doubles the load in an outage"]},"right":{"h":"On purpose","items":["Retries safe errors only","Backs off and gives up"]}},
+{"type":"cta","title":"Save this for your next code review","question":"Do you block a merge for a missing timeout, or just comment on it?"}]}

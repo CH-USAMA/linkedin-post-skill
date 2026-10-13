@@ -1,0 +1,13 @@
+Every endpoint you ship is a promise. Here are 5 checks before you make it.
+
+- Validate the input at the edge
+- Set a timeout on every outbound call
+- Retry on purpose, not by default
+- Log what failed, not what the user typed
+- Test the unhappy path once
+
+Do you block a merge for a missing timeout, or just leave a comment?
+
+First comment: https://example.com/your-source-link
+
+#BackendEngineering #APIDesign #CodeReview
