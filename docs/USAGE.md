@@ -44,6 +44,22 @@ Colours: `cyan violet pink coral lime emerald amber blue`. Meaning: coral = mist
 
 **Video**: render frames with `NeonCanvas`, reveal elements over time, and write 12 to 15 seconds at 30 fps with `imageio` (`libx264`, `yuv420p`). Upload as a native video, not a GIF.
 
+## 5b. Visual Rotation templates (`tools/templates.py`)
+```python
+import sys; sys.path.insert(0, "skill/daily-linkedin-post/tools"); from templates import *
+news_card("t1.png", "photo.jpg", headline=[[("LARAVEL ", False), ("13.35", True)], [("SHIPPED", False)]], sub="...", source="Source: ...")
+screenshot_card("t2.png", "shot.png", headline=["LINE ONE", "LINE TWO"], pill="TOPIC", highlights=[((x0,y0,x1,y1), (255,236,120))], note="...", fix_text="...")
+proof_card("t3.png", "shot.png", title_lines=["...", "..."], kicker="...", circles=[(x0,y0,x1,y1)], notes=[("label", (100,118), 0, (250,110))], checklist=["..."])
+light_carousel(spec, "t4.pdf")                       # cream style
+styled_carousel(spec, "news.pdf", style="news")      # T1 look
+styled_carousel(spec, "yellow.pdf", style="yellow")  # T2 look
+capture("https://example.com/page", {"part": (x, y, w, h)}, outdir=".")  # real screenshot via Playwright
+```
+Carousel `spec`: `{"kicker": "...", "slides": [...]}` with slide types `cover` (title, subtitle, photo, inset, shot, note),
+`card` (n, title, code, shot, bullets, note, verdict, keep_case), `table` (title, cols, rows, note), `cta` (title, question).
+Wrap words in `[brackets]` to highlight them in news/yellow titles. Every call is shown in `templates-demo.py`.
+Fonts: run `python3 skill/daily-linkedin-post/tools/fetch_fonts.py` (setup.sh does it).
+
 ## 6. Caption rules
 Line 1 is a bold, specific claim (140 characters or fewer). Short lines, 3 to 5 bullets, 120 to 220 words. Finish with a question that divides experienced people. No links in the caption: put them in a `First comment:` line. 3 to 5 hashtags at the end. No em dashes.
 

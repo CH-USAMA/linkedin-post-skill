@@ -4,3 +4,4 @@
 - New writing rules should come with the failure they prevent.
 - Do not add auto-posting or unattended commenting. A human approves each publish.
 - Run `python3 skill/daily-linkedin-post/tools/slop_lint.py examples/caption.txt` and `carousel.py examples/slides.json /tmp/t.pdf` before opening a PR.
+- Run `python3 skill/daily-linkedin-post/templates-demo.py /tmp/demo` and look at every render before opening a PR that touches `templates.py`.

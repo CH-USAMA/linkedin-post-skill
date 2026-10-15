@@ -9,3 +9,5 @@
 - **Signature**: `LI_NAME` and `LI_HANDLE` environment variables, or edit `signature()`.
 - **New slide type**: add a branch in `tools/carousel.py` (`elif t == "yourtype":`) and document its fields in `USAGE.md`.
 - **Other platforms**: change the canvas size (`NeonCanvas(w, h)`) and re-check text sizes for that feed.
+- **Templates**: palette constants (`YEL`, `BLK`, `RED`, accent colours) and the `STYLE` dict at the top of `tools/templates.py`; add a new carousel look by adding a `STYLE` entry.
+- **Template rotation**: edit the Visual Rotation list in `SKILL.md` to drop templates you do not want.

@@ -4,3 +4,4 @@ skill/daily-linkedin-post/assets/
 state/
 *.mp4
 .DS_Store
+demo-out/

@@ -1,2 +1,3 @@
 Hook-formula checklist is adapted from the idea of the 21 hook formulas in Jakeschincariol/linkedin-agent-skill (MIT). The code and wording here were written independently.
 Lucide icons (ISC) are fetched by setup.sh and are not bundled. Brand logos are trademarks of their owners.
+Fonts used by tools/templates.py (Anton, Inter, JetBrains Mono, Caveat) are SIL Open Font License fonts fetched from Google Fonts by tools/fetch_fonts.py and are not bundled.
